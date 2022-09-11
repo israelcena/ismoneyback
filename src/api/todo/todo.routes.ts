@@ -4,5 +4,6 @@ import * as TodoHandlers from './todo.handlers';
 const router = Router();
 
 router.get('/', TodoHandlers.findAll);
+router.post('/', TodoHandlers.createOne);
 
 export default router;
