@@ -70,6 +70,8 @@ describe('POST /api/v1/todo', () => {
         expect(response.body).toHaveProperty('_id');
         expect(response.body).toHaveProperty('content');
         expect(response.body).toHaveProperty('done');
+        expect(response.body.content).toBe('Hi Test');
+        expect(response.body.done).toBe(false);
       }),
   );
 });
