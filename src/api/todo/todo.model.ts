@@ -2,7 +2,7 @@ import { db } from '../../db';
 import { z } from 'zod';
 import { WithId } from 'mongodb';
 
-const Todo = z.object({
+export const Todo = z.object({
   content: z.string().min(1).max(64),
   done: z.boolean().default(false),
 });
